@@ -1,0 +1,29 @@
+.botaoNum{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background-color: #505050;
+}
+
+.botaoOp{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background-color: #FF9500;
+}
+
+.botaoEsp{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: #000000;
+   background-color: #8F8B8B;
+}
