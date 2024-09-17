@@ -1,9 +1,10 @@
 import './App.css';
+import Calculadora from './componentes/Calculadora';
 
 function App() {
   return (
     <div className="App">
-      <h1>Iphone10</h1>
+      <Calculadora/>
     </div>
   );
 }
