@@ -1,25 +1,27 @@
+import React from "./Calculadora.css"
+
 const Calculadora = () => {
     return(
         <div>
-            <button>AC</button>
-            <button>+/-</button>
-            <button>%</button>
-            <button>/</button>
-            <button>X</button>
-            <button>-</button>
-            <button>+</button>
-            <button>=</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button>,</button>
+            <button className="botaoEsp">AC</button>
+            <button className="botaoEsp">+/-</button>
+            <button className="botaoEsp">%</button>
+            <button className="botaoOp">/</button>
+            <button className="botaoOp" >X</button>
+            <button className="botaoOp">-</button>
+            <button className="botaoOp">+</button>
+            <button className="botaoOp">=</button>
+            <button className="botaoNum">7</button>
+            <button className="botaoNum">8</button>
+            <button className="botaoNum">9</button>
+            <button className="botaoNum">4</button>
+            <button className="botaoNum">5</button>
+            <button className="botaoNum">6</button>
+            <button className="botaoNum">1</button>
+            <button className="botaoNum">2</button>
+            <button className="botaoNum">3</button>
+            <button className="botaoNum">0</button>
+            <button className="botaoNum">,</button>
         </div>
     )
 }
