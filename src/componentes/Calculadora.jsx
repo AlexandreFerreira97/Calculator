@@ -43,22 +43,30 @@ const Calculadora = () => {
     }
 
     function resultado(){
+
+        var resultado = 0
+
         if(operador === '+'){
-            setNumero(parseFloat(numeroS) + parseFloat(numero))
+            resultado = parseFloat(numeroS) + parseFloat(numero)
+            setNumero(Number.parseFloat(resultado).toFixed(2))
         } 
 
         if(operador === '-'){
-            setNumero(parseFloat(numeroS) - parseFloat(numero))
+            resultado = parseFloat(numeroS) - parseFloat(numero)
+            setNumero(Number.parseFloat(resultado).toFixed(2))
         }
 
         if(operador === '/'){
-            setNumero(parseFloat(numeroS) / parseFloat(numero))
+            resultado = parseFloat(numeroS) / parseFloat(numero)
+            setNumero(Number.parseFloat(resultado).toFixed(4))
         }
 
         if(operador === 'X'){
-            setNumero(parseFloat(numeroS) * parseFloat(numero))
+            resultado = parseFloat(numeroS) * parseFloat(numero)
+            setNumero(Number.parseFloat(resultado).toFixed(2))
         }
     }
+
 
     return(
         <div className="calculadora">
