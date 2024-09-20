@@ -37,6 +37,9 @@ const Calculadora = () => {
 
     function operacao(opera){
         var operaTipo = opera.target.value
+        setOperador(operaTipo)
+        setNumeroS(numero)
+        setNumero(0)
     }
 
 
@@ -65,10 +68,10 @@ const Calculadora = () => {
                 </div>
 
                 <div className="op"> 
-                    <button className="botaoOp">/</button>
-                    <button className="botaoOp" >X</button>
-                    <button className="botaoOp">-</button>
-                    <button className="botaoOp">+</button>
+                    <button className="botaoOp" onClick={operacao} value={'/'}>/</button>
+                    <button className="botaoOp" onClick={operacao} value={'*'} >X</button>
+                    <button className="botaoOp" onClick={operacao} value={'-'}>-</button>
+                    <button className="botaoOp" onClickCapture={operacao} value={'+'}>+</button>
                     <button className="botaoOp">=</button>
                 </div>
             </div>
