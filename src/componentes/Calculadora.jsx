@@ -4,6 +4,8 @@ import React from "./Calculadora.css"
 const Calculadora = () => {
 
     const [numero, setNumero] = useState(0)
+    const [numeroS, setNumeroS] = useState(0)
+    const [operador, setOperador] = useState()
 
     function inputNumero(valor){
         var num = valor.target.value
@@ -32,6 +34,12 @@ const Calculadora = () => {
     function porcentagem(){
         setNumero(numero/100)
     }
+
+    function operacao(opera){
+        var operaTipo = opera.target.value
+    }
+
+
 
     return(
         <div className="calculadora">
