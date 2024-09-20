@@ -19,6 +19,20 @@ const Calculadora = () => {
         setNumero(0)
     }
 
+    function trocarSinal(){
+        if(numero>0)
+        {
+            setNumero(-numero)
+        }
+        else{
+            setNumero(Math.abs(numero))
+        }
+    }
+
+    function porcentagem(){
+        setNumero(numero/100)
+    }
+
     return(
         <div className="calculadora">
             <div className="container">
@@ -27,8 +41,8 @@ const Calculadora = () => {
                 </div>
                 <div className="esp">
                     <button className="botaoEsp" onClick={limparDisplay}>AC</button>
-                    <button className="botaoEsp">+/-</button>
-                    <button className="botaoEsp">%</button>
+                    <button className="botaoEsp" onClick={trocarSinal} >+/-</button>
+                    <button className="botaoEsp" onClick={porcentagem}>%</button>
                     <button className="botaoNum" onClick={inputNumero} value={7}>7</button>
                     <button className="botaoNum" onClick={inputNumero} value={8}>8</button>
                     <button className="botaoNum" onClick={inputNumero} value={9}>9</button>
@@ -39,7 +53,7 @@ const Calculadora = () => {
                     <button className="botaoNum" onClick={inputNumero} value={2}>2</button>
                     <button className="botaoNum" onClick={inputNumero} value={3}>3</button>
                     <button className="botaoNum " onClick={inputNumero} value={0}>0</button>
-                    <button className="botaoNum">,</button>
+                    <button className="botaoNum" onClick={inputNumero} value={'.'}>,</button>
                 </div>
 
                 <div className="op"> 
