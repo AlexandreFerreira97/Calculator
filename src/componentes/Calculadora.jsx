@@ -7,7 +7,12 @@ const Calculadora = () => {
 
     function inputNumero(valor){
         var num = valor.target.value
-        setNumero(num)
+        if(numero === 0)
+        {
+            setNumero(num)
+        }else{
+            setNumero(numero + num)
+        }
     }
 
     return(
