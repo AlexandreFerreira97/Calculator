@@ -42,7 +42,23 @@ const Calculadora = () => {
         setNumero(0)
     }
 
+    function resultado(){
+        if(operador === '+'){
+            setNumero(parseFloat(numeroS) + parseFloat(numero))
+        } 
 
+        if(operador === '-'){
+            setNumero(parseFloat(numeroS) - parseFloat(numero))
+        }
+
+        if(operador === '/'){
+            setNumero(parseFloat(numeroS) / parseFloat(numero))
+        }
+
+        if(operador === 'X'){
+            setNumero(parseFloat(numeroS) * parseFloat(numero))
+        }
+    }
 
     return(
         <div className="calculadora">
@@ -69,13 +85,12 @@ const Calculadora = () => {
 
                 <div className="op"> 
                     <button className="botaoOp" onClick={operacao} value={'/'}>/</button>
-                    <button className="botaoOp" onClick={operacao} value={'*'} >X</button>
+                    <button className="botaoOp" onClick={operacao} value={'X'} >X</button>
                     <button className="botaoOp" onClick={operacao} value={'-'}>-</button>
                     <button className="botaoOp" onClickCapture={operacao} value={'+'}>+</button>
-                    <button className="botaoOp">=</button>
+                    <button className="botaoOp" onClick={resultado} value={'='}>=</button>
                 </div>
             </div>
-
         </div>
 
     )
