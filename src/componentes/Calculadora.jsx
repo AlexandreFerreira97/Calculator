@@ -15,6 +15,10 @@ const Calculadora = () => {
         }
     }
 
+    function limparDisplay(){
+        setNumero(0)
+    }
+
     return(
         <div className="calculadora">
             <div className="container">
@@ -22,7 +26,7 @@ const Calculadora = () => {
                     <h1>{numero}</h1>
                 </div>
                 <div className="esp">
-                    <button className="botaoEsp">AC</button>
+                    <button className="botaoEsp" onClick={limparDisplay}>AC</button>
                     <button className="botaoEsp">+/-</button>
                     <button className="botaoEsp">%</button>
                     <button className="botaoNum" onClick={inputNumero} value={7}>7</button>
